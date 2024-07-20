@@ -4,33 +4,36 @@
     box-sizing: border-box;
 }
 
-.navbar {
-    min-width: 90%;
+div.navbar {
     height: 65px;
-    background-color:   #1c2541;
+    background-color:#1c2541;
     color: white;
     padding: 10px;
-    position: relative;
+    position:absolute;
     display: flex;
-    justify-content: end;
+    justify-content:space-between;
     align-items: center;
-   
+    width: 100%;
+    
 }
 
-span.brand-name {
+
+
+li.brand-name {
     font-weight: 100rem;
     font-size: 1.65rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #d64550;
-    margin-right: 75rem;
-    position: absolute;
-    
+    position: relative;
+    list-style: none;
     
 }
 
-span.nav {
+li.nav {
     font-size: 0.90rem;
-    margin-right: 7rem;
+    margin-left: 7rem;
+    display: flex;
+    justify-content: end;
 }
 
 body {
@@ -65,11 +68,14 @@ body {
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s;
+    position: relative;
+    top: 80px;
     
   
 }
 .circle-icon:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 .circle-icon i{
     color: #d64550;
@@ -81,7 +87,7 @@ body {
 }
 .name{
 position: relative;
-top: 170px;
+top: 240px;
 left: -360px;
 font-weight: 1000;
 font-size: 3rem;
@@ -89,7 +95,7 @@ font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ox
 }
 .myblog{
     position: relative;
-    top: 180px;
+    top: 240px;
     right: 340px;
     font-size: 1rem;
     font-family: cursive;
@@ -97,7 +103,7 @@ font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ox
 
 .btn {
     position: relative;
-    top: 250px;
+    top: 300px;
     right: 390px;
     background-color: #d64550;
     border-radius: 2rem;
@@ -118,7 +124,7 @@ transition: transform 0.3s;
 
 .mywork {
     position: relative;
-    top: 200px;
+    top: 250px;
     right: 175px;
     color: #d64550;
     width: 50px;
@@ -139,7 +145,131 @@ transition: transform 0.3s;
 
 .work {
     position: relative;
-    top: 165px;
+    top: 212px;
     right: 64px;
     font-family: cursive;
+}
+
+.double {
+    position: relative;
+    bottom :40px;
+    left: 520px;
+    font-weight: 600;
+    font-family:sans-serif;
+    
+
+
+}
+.double p {
+    font-size: 2.4rem;
+}
+
+.footnav {
+     height: 80px;
+     background-color:#ee2e31;
+     position: relative;
+     bottom: 50px;
+}
+ 
+input {
+    background-color: #fff;
+    color:burlywood;
+    position: relative;
+    left: 430px;
+    top: 27px;
+    border: none;
+    outline: none;
+    padding: 4px 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.35s;
+}
+
+.talk {
+    position: relative;
+    left: 658px;
+    bottom: 5px;
+    border: 2px solid white;
+    width: 145px;
+    height: 32px;
+    text-align: center;
+}
+
+.talk:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.35s;
+}
+
+ul li {
+    list-style: none;
+}
+
+.contact {
+    font-weight: 500;
+}
+
+#newcontact {
+    color: #ee2e31;
+    font-weight: 450;
+    font-size: 1.67rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    bottom: 34px;
+    left: 100px;
+}
+.number {
+    position: relative;
+    left: 100px;
+    bottom: 30px;
+}
+
+footer {
+    position:relative;
+    top: 70px;
+}
+
+.india {
+    position: relative;
+    left: 426px;
+    bottom: 160px;
+    font-weight: 500;
+}
+#newindia {
+    color: #ee2e31;
+    font-size: 1.65rem;
+    position: relative;
+    left:120px;
+}
+
+.social-media {
+    position: relative;
+    left: 950px;
+    bottom: 288px;
+    font-weight: 500;
+}
+#social {
+    color: #ee2e31;
+    position: relative;
+    left: -3px;
+    font-size: 1.65rem;
+}
+
+.engineer {
+    position: relative;
+    left: 1210px;
+    bottom: 436px;
+    font-weight: 500;
+
+}
+#developer {
+    color: #ee2e31;
+    font-size: 1.65rem;
+    position: relative;
+    right: 22px;
+
 }
